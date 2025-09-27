@@ -32,13 +32,13 @@ body {
    /* font-size 1.6rem is now the same as 16px */
    line-height: 1.6;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   background-color: black;
+   background-color: rgb(235, 230, 230);
 }
 
 
 header {
     padding: 50px;
-    background-color:rgb(202, 145, 91);
+    background-color:rgb(43, 47, 243);
     text-align: center;
 }
 
