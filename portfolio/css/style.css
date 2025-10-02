@@ -1,0 +1,263 @@
+/*
+COLOR PALETTE - OCEAN THEME
+Deep ocean    #003d5c
+Teal blue     #007ba7
+Coral accent  #ff6b6b
+Sand beige    #f4e4c1
+Wave blue     #0099cc
+Foam white    #f0f8ff
+Dark navy     #001f3f
+*/
+/* GLOBAL STYLES
+------------------------------------*/
+/*
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    font-size: 69%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background: linear-gradient(180deg, #001f3f 0%, #003d5c 100%);
+    color: #f0f8ff;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+h1, h2, h3 {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/* links */
+a {
+    color: #0099cc;
+}
+a:hover {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+footer a {
+    color: #0099cc;
+}
+footer a:hover {
+    color: #ff6b6b;
+}
+.btn {
+    background: #007ba7;
+    color: #f0f8ff;
+    text-decoration: none;
+    border: 2px solid #0099cc;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    border-radius: 4px;
+}
+.btn:hover {
+    background: #0099cc;
+    border-color: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 153, 204, 0.3);
+}
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+    flex: 1;
+}
+/* HOME
+------------------------------------*/
+.home {
+    background: url(../images/ocean.png) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg {
+    background: rgba(0, 61, 92, 0.9);
+    border: 2px solid #0099cc;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 153, 204, 0.2);
+}
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+/* RESUME
+------------------------------------*/
+.resume header {
+    background: url(../images/ocean-waves.png) center;
+    background-size: cover;
+    content:"";
+    display: block;
+    height: 375px;
+    border-bottom: 3px solid #0099cc;
+}
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px dashed #007ba7;
+    color: #0099cc;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 1200px) {
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+/* Profile
+------------------------------------*/
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+    border-left: 4px solid #007ba7;
+    padding-left: 15px;
+}
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid #0099cc;
+    box-shadow: 0 4px 8px rgba(0, 153, 204, 0.2);
+}
+@media screen and (min-width:860px){
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Work Experience
+------------------------------------*/
+.work-item {
+    margin: 30px 0;
+}
+.work-details p {
+    margin: 0;
+}
+
+@media screen and (min-width:860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
+}
+/* Education
+------------------------------------*/
+.education-item {
+    margin: 30px 0;
+}
+.education-item p {
+    margin: 0;
+}
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #001f3f;
+    color: #f0f8ff;
+    border-top: 2px solid #0099cc;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.socials img {
+    width: 32px;
+    filter: brightness(0.9) sepia(0.3) hue-rotate(170deg) saturate(2);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+.socials img:hover {
+    filter: brightness(1.2) sepia(0.5) hue-rotate(170deg) saturate(3);
+    transform: translateY(-3px);
+}
+
+@media screen and (min-width: 860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        flex-shrink: 0;
+    }
+}
+@media screen and (max-width: 859px){
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
